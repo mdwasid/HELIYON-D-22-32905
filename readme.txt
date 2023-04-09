@@ -18,14 +18,15 @@ Clust_SI.m - Clustering with Side Information approach
 
 Clusters_FSI.xlsx - Clusters obtained through clustering users using fuzzy side information
 
-Clust-FSI.m - Clustering with Fuzzy Side Information approach
+Clust_FSI.m - Clustering with Fuzzy Side Information approach
 
 rating_count.m - calculation of rating count using item criteria obtained through data_preprocessing.m. To be executed before executing NRC-CRS.m and GA-NRC-CRS.m
 
-NRC-CRS.m - Weighted normalized rating count and common rating weight similarity
+NRC_CRS.m - Weighted normalized rating count and common rating weight similarity
 
-GA-NRC-CRS.m - GA based RS through weighted normalized rating count and common rating weight similarity
-actuserfit.m - function calling for evaluating fitness function. The initialization of GA is done using random binary numbers.   
+GA_NRC_CRS.m - GA based RS through weighted normalized rating count and common rating weight similarity
+actuserfit.m - function call in GA_NRC_CRS.m for evaluating fitness function. The initialization of GA is done using random binary numbers.   
+cross_mut.m - function call in GA_NRC_CRS.m for crossover-mutation operators
 
 The Yahoo! Movies dataset can be obtained from [1]. Original dataset consists of 62156 ratings provided by 6078 users to 976 movies. Dataset description - 
 
@@ -41,4 +42,4 @@ data_movies.txt -
 
 data_preprocessing.m - set of codes for extracting overall and multi-criteria ratings from original data_movies dataset
 
-[1] K.Lakiotaki, N. F. Matsatsinis, and A.Tsouki‡s, ìMulti-Criteria User Modeling in Recommender Systemsî, IEEE Intelligent Systems, 26 (2), 64 - 76, (2011)
+[1] K.Lakiotaki, N. F. Matsatsinis, and A.Tsouki√†s, ‚ÄúMulti-Criteria User Modeling in Recommender Systems‚Äù, IEEE Intelligent Systems, 26 (2), 64 - 76, (2011)
